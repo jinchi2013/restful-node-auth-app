@@ -44,3 +44,5 @@ const port = app.get('port');
 app.listen(port, () => {
     console.info(`Express server listen on port ${port}`);
 });
+
+//Please continue the api test on http://thejackalofjavascript.com/architecting-a-restful-node-js-app/
