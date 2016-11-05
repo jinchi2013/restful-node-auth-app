@@ -51,7 +51,7 @@ function genToken(user) {
     var expires = expiresIn(7);
     var token = jwt.encode({
         exp: expires
-    }, require('../config/secret')());
+    }, require('./config/secret')());
 
     return {
         token: token,
