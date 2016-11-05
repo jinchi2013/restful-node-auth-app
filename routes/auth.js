@@ -25,7 +25,6 @@ var auth = {
                 "status": 401,
                 "message": "Invalid credentials"
             });
-            return;
         } else {
             res.json(genToken(dbUserObj));
         }
