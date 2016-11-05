@@ -41,7 +41,6 @@ module.exports = function(req, res, next) {
                         "status": 403,
                         "message": "Not Authorized"
                     });
-                    return;
                 }
             } else {
                 // No user with this name exists, respond back with a 401
@@ -50,7 +49,6 @@ module.exports = function(req, res, next) {
                     "status": 401,
                     "message": "Invalid User"
                 });
-                return;
             }
 
         } catch (err) {
@@ -67,6 +65,5 @@ module.exports = function(req, res, next) {
             "status": 401,
             "message": "Invalid Token or Key"
         });
-        return;
     }
 };
