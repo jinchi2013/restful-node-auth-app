@@ -6,7 +6,7 @@ var products = {
 
     getOne: function(req, res) {
         var id = req.params.id;
-        var product = data[0];
+        var product = data[id];
         res.json(product);
     },
     create: (req, res) => {
@@ -22,7 +22,7 @@ var products = {
     },
     delete: (req, res)=> {
         var id = req.params.id;
-        data.splice(id, i)
+        data.splice(id, i);
         res.json(true);
     }
 };
